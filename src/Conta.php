@@ -24,7 +24,7 @@ class Conta
       echo "Saldo atual: B$ {$this->saldo} <br />";
     }
     else {
-      echo "Depósito não realizado! O valor mínimo de depósito é B$ 1,00";
+      echo "Depósito não realizado! O valor mínimo de depósito é B$ 1,00 <br />";
     }
   }
 
