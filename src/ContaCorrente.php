@@ -1,6 +1,5 @@
 <?php
-use Classes\Conta;
-include("Conta.php");
+require_once("Conta.php");
 
 class Corrente extends Conta
 {
@@ -28,6 +27,5 @@ class Corrente extends Conta
       echo "Saque não realizado! Saldo insuficiente. <br />";
     }
   }
-
 }
 ?>

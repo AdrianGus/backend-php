@@ -1,6 +1,4 @@
 <?php
-namespace Classes;
-
 class Conta
 {
   public $agencia;
@@ -16,13 +14,14 @@ class Conta
 
   public function getDetalhes()
   {
-    echo "Agência: {$this->agencia} | Conta: {$this->numero} | Saldo atual: B$ {$this->saldo} <br />";
+    echo "Detalhes da conta: Agência: {$this->agencia} | Conta: {$this->numero} | Saldo atual: B$ {$this->saldo} <br />";
   }
 
   public function depositar($valor) {
     if($valor > 0) {
       $this->saldo += $valor;
       echo "Depósito de B$ {$valor} realizado com sucesso! <br />";
+      echo "Saldo atual: B$ {$this->saldo} <br />";
     }
     else {
       echo "Depósito não realizado! O valor mínimo de depósito é B$ 1,00";

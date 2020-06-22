@@ -1,6 +1,5 @@
 <?php
-use Classes\Conta;
-include("Conta.php");
+require_once("Conta.php");
 
 class Poupanca extends Conta
 {
@@ -28,6 +27,5 @@ class Poupanca extends Conta
       echo "Saldo insuficiente! <br />";
     }
   }
-
 }
 ?>
