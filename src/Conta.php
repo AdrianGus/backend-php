@@ -20,8 +20,13 @@ abstract class Conta
   }
 
   public function depositar($valor) {
-    $this->saldo += $valor;
-    echo "Depósito de B$ {$valor} realizado com sucesso! <br />";
+    if($valor > 0) {
+      $this->saldo += $valor;
+      echo "Depósito de B$ {$valor} realizado com sucesso! <br />";
+    }
+    else {
+      echo "Depósito não realizado! O valor mínimo de depósito é B$ 1,00";
+    }
   }
   
 }
