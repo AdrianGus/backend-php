@@ -1,9 +1,10 @@
 <?php
-
 require_once __DIR__ . '/vendor/autoload.php';
+include __DIR__ . '/src/ContaCorrente.php';
+include __DIR__ . '/src/ContaPoupanca.php';
 
-use Moovin\Job\Backend;
+$contaCorrente = new Corrente(100, 200, 300);
+$contaCorrente->getDetalhes();
 
-$exemplo = new Backend\Exemplo;
-
-echo $exemplo->exemplo();
+$contaPoupanca = new Corrente(100, 200, 500);
+$contaPoupanca->getDetalhes();
